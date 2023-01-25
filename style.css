@@ -1,0 +1,420 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+:root{
+    --primary: #D6800B;
+    --secondary:#DBD800;
+    --tertiary: #0015D6;
+    --light: #D1D1D1;
+    --dark: #1D1D20;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+h1{
+    font-weight: 900;
+    font-size: 200px;
+    color: var(--primary)
+}
+
+h2{
+    font-weight: 400;
+    font-size: 83px;
+    color: var(--secondary)
+}
+
+h3{
+    font-weight: 700;
+    font-size: 82px;
+}
+
+h4{
+    font-weight: 400;
+    font-size: 48px;
+}
+
+footer{
+    position: fixed;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 95vw;
+    
+}
+
+.hero{
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 1200px;
+    height: 315px;
+    
+}
+
+
+
+.tagline{
+    position: relative;
+    margin: -50px;
+    left: 260px;
+}
+
+.hero-dec{
+    position: relative;
+    left: 860px;
+    bottom: 240px;
+}
+.info-dec{
+    position: relative;
+    left: -20px;
+    bottom: 120px;
+}
+
+.icon-dec{
+    position: absolute;
+    width: 140px;
+    left: 1420px;
+    top: 130px;
+   /* width: 200px;
+    left: 1390px;
+    top: 80px;*/
+    
+}
+
+.project-dec{
+    position: relative;
+    left: 90px;
+    bottom: 116px;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+    margin-top: 60px;
+    justify-content: space-evenly;
+}
+
+.information-wrapper{
+    /*width: 1260px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.information{
+    width: 570px;
+}
+
+.info-header{
+    margin-bottom: 20px;
+}
+
+.information-text{
+    margin-top: -114px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.project-header{
+    text-align: center;
+}
+
+.project-text{
+    text-align: center;
+    line-height: 20px;
+    width: 570px;
+    margin-top: 20px;
+}
+
+.project-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.project-link-wrapper{
+    margin: 20px 30px;
+}
+
+.project-link-button{
+    background-color: var(--light);
+    color: var(--dark);
+    border-color: var(--tertiary);
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.projects-header{
+    margin-bottom: 20px;
+    padding-right:30px;
+}
+
+.project-buttons{
+    display: flex;
+    flex-direction: column;
+    margin-top: -116px;
+}
+
+.project-button{
+    background: none;
+    border: none;
+    text-align: right;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--light);
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.project-button:hover{
+    color: var(--secondary);
+}
+
+.footer-link-button:hover{
+    color: var(--light);
+}
+
+.logo{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    height: 300px;
+    width: 300px;
+}
+
+.hide{
+    display: none;
+}
+
+.hr-line{
+    height: 12px;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
+    background: rgb(0,21,214);
+    animation: gradslide .5s forwards;
+    animation-timing-function: linear;
+    background: linear-gradient(90deg, rgba(0,21,214,1) 0%, rgba(214,128,11,1) 33%, rgba(219,216,0,1) 66%);
+    
+}
+
+
+@keyframes gradslide{
+    from{
+        background-size: 800%;
+    }
+    
+    to
+    {
+        background-size:100%;
+    }
+
+}
+
+.button-link{
+    cursor: pointer;
+}
+
+.three-button-row{
+    margin: 20px 3px;
+}
+
+.contact-box{
+    display: none;
+}
+
+.primary-text{
+    color: var(--primary);
+}
+
+.secondary-text{
+    color: var(--secondary)
+}
+
+.tertiary-text{
+    color: var(--tertiary)
+}
+
+.contact-button{
+    text-align: left;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-text{
+    font-size: 30px;
+}
+
+.design-desktop{
+    width: 90vw;
+    height: auto;
+}
+
+.design-mobile{
+    margin: 60px;
+}
+
+.design-header{
+    margin: 60px 0px 30px;
+    text-decoration: underline var(--secondary);
+}
+
+.footer-link-wrapper{
+    padding: 0px 60px;
+}
+
+@media (width<1600px){
+    .icon-dec{
+        display: none;
+    }
+}
+
+@media (width<1200px){
+    .content{
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    h1{
+        font-size: 54px;
+    }
+
+    h2{
+        font-size: 23px;
+    }
+
+    h3{
+        font-size: 38px;
+    }
+
+    h4{
+        font-size: 26px ;
+    }
+
+    .tagline{
+        margin: 0px;
+        margin-top: -17px;
+        left: 52px;
+    }
+
+    .hero{
+       
+        margin-left: 4px;
+        width: 100%;
+        height: 100px;
+    }
+
+    .hero-dec{
+        width: 80px;
+        left: 260px;
+        bottom: 60px;
+    }
+
+   
+
+    .project-dec{
+        width: 113px;
+        
+        position: static;
+    }
+
+    .project-dec-wrapper{
+        display: flex;
+        flex-direction: row-reverse;
+        margin-top: -58px ;
+    }
+
+    .information-wrapper {
+         width: 100%;
+         padding-bottom: 30px;
+    }
+
+    .projects-panel{
+        padding-bottom: 50px;
+    }
+
+    .info-header{
+        margin-left:6px;
+        font-weight: 700;
+    }
+
+    .info-dec{
+        width: 106px;
+        bottom: 56px;
+        left: -5px;
+    }
+
+    .information-text{
+        margin-top:-46px;
+    }
+
+    .projects-header{
+        text-align: right;
+        padding-right: 8px;
+    }
+
+    .project-buttons{
+        margin-top: 0px;
+    }
+
+    .project-button{
+        font-size: 34px;
+    }
+
+    .project-text{
+        width:unset;
+        max-width: 570px;
+    }
+
+    .project-link-wrapper{
+        margin: 6px 0px;
+    }
+
+    .project-links{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 6px;
+    }
+
+    footer{
+        display: none;
+    }
+
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .email-text{
+        font-size: 20px;
+    }
+}
